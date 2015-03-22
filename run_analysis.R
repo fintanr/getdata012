@@ -1,4 +1,5 @@
-# 
+# run_analyis.R - Coursera Getting and Cleaning Data Project
+#
 # Using the UCI HAR Dataset create a tidy data set with the average of std and mean 
 # variables for each activity and each subject
 # 
@@ -23,6 +24,7 @@ combineData <- function () {
 
   if ( !file.exists("features.txt") | !file.exists("test") | !file.exists("train") ) {
     print("You do not appear to have the correct data downloaded")
+    print("Download the dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
     quit() 
   }
  
